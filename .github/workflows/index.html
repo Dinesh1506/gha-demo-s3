@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Real-Time Page</title></head>
+<body>
+    <h1>Current Time: <span id="clock"></span></h1>
+
+    <script>
+        // This function updates the text every 1000ms (1 second)
+        setInterval(() => {
+            document.getElementById('clock').innerText = new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
